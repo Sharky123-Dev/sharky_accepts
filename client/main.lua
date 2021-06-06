@@ -24,3 +24,9 @@ function openMenu(trigger, isServer, params, time, text)
         print("Nop")
     end
 end
+
+if Config.Debug then 
+    RegisterCommand("debugaccept", function()
+    openMenu("chat:addMessage", false, {color = {255, 255, 255}, multiline = true, args = { GetPlayerName(PlayerId()), "Hello, this is the message that will show in chat" }}, 2000, "Testeo")
+    end, false)
+end
