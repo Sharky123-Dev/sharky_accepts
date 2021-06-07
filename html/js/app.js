@@ -7,7 +7,7 @@ $(document).ready(function () {
                 type: 'success',
                 layout: 'topRight',
                 text: data.text,
-                timeout: data.time,
+                timeout: data.time - 250,
                 theme: "bootstrap-v4",
                 progressBar: true,
                 buttons: [
