@@ -11,10 +11,10 @@ $(document).ready(function () {
                 theme: "bootstrap-v4",
                 progressBar: true,
                 buttons: [
-                    Noty.button('Aceptar [Y]', 'btn btn-success', function () {
+                    Noty.button('Accept [Y]', 'btn btn-success', function () {
                         n.close();
                     }),
-                    Noty.button('Rechazar [N]', 'btn btn-danger', function () {
+                    Noty.button('Deny [N]', 'btn btn-danger', function () {
                         n.close();
                     })
                   ]
