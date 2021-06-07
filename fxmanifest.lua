@@ -16,7 +16,6 @@ client_scripts {
 ui_page 'html/index.html'
 
 files {
-    'html/css/*',
 	'html/js/*',
 	'html/*'
 }

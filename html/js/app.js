@@ -8,7 +8,15 @@ $(document).ready(function () {
                 layout: 'topRight',
                 text: data.text,
                 timeout: data.time,
-                progressBar: true
+                progressBar: true,
+                buttons: [
+                    Noty.button('Aceptar [Y]', 'btn btn-success', function () {
+                        n.close();
+                    }),
+                    Noty.button('Rechazar [N]', 'btn btn-danger', function () {
+                        n.close();
+                    })
+                  ]
             }).show();
         } else if (data.close == true) {
             n.close();
