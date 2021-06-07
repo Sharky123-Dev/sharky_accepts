@@ -11,7 +11,7 @@ $(document).ready(function () {
                 theme: "bootstrap-v4",
                 progressBar: true,
                 buttons: [
-                    Noty.button('Accept [Y]', 'btn btn-success', function () {
+                    Noty.button('Accept [Y]', 'btn btn-success', function () { // here change the css btn, more themes in https://ned.im/noty/#/themes
                         n.close();
                     }),
                     Noty.button('Deny [N]', 'btn btn-danger', function () {
