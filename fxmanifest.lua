@@ -8,8 +8,9 @@ version '1.0.0'
 
 -- What to run
 client_scripts {
+    'config/config.lua',
     'client/*.lua',
-    'config/config.lua'
+    
 }
 
 ui_page 'html/index.html'
@@ -19,3 +20,5 @@ files {
 	'html/js/*',
 	'html/*'
 }
+
+export 'openMenu'
