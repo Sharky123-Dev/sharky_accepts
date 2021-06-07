@@ -4,14 +4,14 @@ function openMenu(trigger, isServer, params, time, text)
         text = text,
         time = time
     })
-    local time2 = time - 1
+    local time2 = time - 1 -- Math here to break the loop when the time goes up.
     Citizen.SetTimeout(time, function()
         time2 = time + 1
     end)
     while time > time2 do
-        if IsControlJustPressed(1, 246) then
+        if IsControlJustPressed(1, 246) then -- Press Y
             if isServer == true then
-                TriggerServerEvent(trigger, params)
+                TriggerServerEvent(trigger, params) -- Trigger executated when you press Y
                 SendNUIMessage({close = true})
                 break
             else 
@@ -19,8 +19,8 @@ function openMenu(trigger, isServer, params, time, text)
                 SendNUIMessage({close = true})
                 break
             end
-        elseif IsControlJustPressed(1, 249) then 
-            SendNUIMessage({close = true})
+        elseif IsControlJustPressed(1, 249) then -- Press N
+            SendNUIMessage({close = true}) -- Nothing happens here
             break
         end
         Wait(1)
