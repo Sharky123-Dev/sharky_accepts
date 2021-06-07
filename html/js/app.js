@@ -8,6 +8,7 @@ $(document).ready(function () {
                 layout: 'topRight',
                 text: data.text,
                 timeout: data.time,
+                theme: "bootstrap-v4",
                 progressBar: true,
                 buttons: [
                     Noty.button('Aceptar [Y]', 'btn btn-success', function () {
