@@ -13,6 +13,7 @@ Hi! I am **Sharky**, this script is for accept and deny things.
  `git clone https://github.com/Sharky123-Dev/sharky_accepts.git`
  2. Use it, calling the function **openMenu**
 `export['sharky_accepts']:openMenu(trigger, isServer, params, time, text)`
+ 3. If you want you can change the theme in the app.js more themes in https://ned.im/noty/#/themes	
 	
 3. You are good to go.
 
