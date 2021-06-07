@@ -38,6 +38,6 @@ end
 
 if Config.Debug then 
     RegisterCommand("debugaccept", function()
-        openMenu("chat:addMessage", false, {color = {255, 255, 255}, multiline = true, args = { GetPlayerName(PlayerId()), "Hello, this is the message that will show in chat" }}, 2000,"Testeo")
+        openMenu("chat:addMessage", false, {color = {255, 255, 255}, multiline = true, args = { GetPlayerName(PlayerId()), "Hello, this is the message that will show in chat" }}, 2000,"Testing")
     end, false)
 end
