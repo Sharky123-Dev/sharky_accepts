@@ -1,6 +1,6 @@
 # Sharky Accepts!
 
-Hi! I am **Sharky**, this script is for accept and deny things.
+Hi! I am **Sharky**, this script is for accept and deny things, this script was made using ![NotyJs](https://github.com/needim/noty).
 
 
 # Images
